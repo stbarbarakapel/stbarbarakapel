@@ -16,8 +16,8 @@ export function Hero() {
     >
       <img
         src="/kapel-nacht.jpg"
-        alt="De St Barbarakapel bij nacht, met verlichte glas-in-loodramen"
-        className="absolute inset-0 h-full w-full object-cover object-[center_40%]"
+        alt="De St Barbarakapel bij nacht, met verlichte glas-in-loodramen, tussen de kale bomen van de begraafplaats"
+        className="absolute inset-0 h-full w-full object-cover object-[center_42%]"
         fetchPriority="high"
       />
       <div
@@ -49,12 +49,17 @@ export function Hero() {
       </nav>
 
       <div className="relative mt-auto flex flex-col items-center gap-5 px-6 pb-24 text-center [text-shadow:0_2px_18px_rgba(13,10,8,0.85)]">
-        <h1 className="m-0 font-display text-[clamp(44px,7.5vw,112px)] font-normal leading-[1.05] tracking-[0.16em] text-bone">
-          LATIJNSE MIS
+        <h1 className="m-0 flex flex-col items-center gap-3 font-display font-normal text-bone">
+          <span className="text-[clamp(30px,5.4vw,80px)] leading-[1.05] tracking-[0.16em]">
+            LATIJNSE GEMEENSCHAP
+          </span>
+          <span className="text-[clamp(20px,2.8vw,40px)] leading-[1.1] tracking-[0.22em] text-gold-light">
+            ST BARBARAKAPEL
+          </span>
         </h1>
         <CrossDivider />
         <p className="m-0 font-display text-[clamp(14px,1.4vw,18px)] tracking-[0.24em] text-gold">
-          ST BARBARAKAPEL · UTRECHT
+          ZONDAG 17.00u · UTRECHT
         </p>
         <p className="mt-2 mb-0 max-w-[560px] text-[22px] italic text-text-2">
           De Heilige Mis in de klassieke Latijnse ritus, in een neogotische kapel op de

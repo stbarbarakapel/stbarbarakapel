@@ -24,7 +24,7 @@ export function Footer() {
         </a>
       </div>
       <p className="mt-6 mb-0 text-[15px] text-faint">
-        © Latijnse Misgemeenschap St Barbarakapel · Utrecht
+        © Latijnse Gemeenschap St Barbarakapel · Utrecht
       </p>
     </footer>
   );

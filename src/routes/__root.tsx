@@ -11,9 +11,9 @@ import type { ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { SITE_URL, DEFAULT_OG_IMAGE } from "../lib/site";
 
-const TITLE = "Latijnse Mis — St Barbarakapel Utrecht";
+const TITLE = "Latijnse Gemeenschap St Barbarakapel — Utrecht";
 const DESCRIPTION =
-  "De Heilige Mis in de klassieke Latijnse ritus in de St Barbarakapel, Prinsesselaan 4, Utrecht. Misrooster, route en informatie voor een eerste bezoek.";
+  "De Heilige Mis in de klassieke Latijnse ritus in de St Barbarakapel, Prinsesselaan 4, Utrecht — elke zondag om 17.00u. Misrooster, route en informatie voor een eerste bezoek.";
 
 function Centered({ children }: { children: ReactNode }) {
   return (

@@ -20,25 +20,25 @@ export const komendeMissen: Mis[] = [
     datum: "2026-11-29",
     latijn: "Dominica I Adventus",
     nederlands: "Eerste Zondag van de Advent",
-    tijd: "[TIJD]",
+    tijd: "17.00u",
   },
   {
     datum: "2026-12-06",
     latijn: "Dominica II Adventus",
     nederlands: "Tweede Zondag van de Advent",
-    tijd: "[TIJD]",
+    tijd: "17.00u",
   },
   {
     datum: "2026-12-13",
     latijn: "Dominica III Adventus",
     nederlands: "Zondag Gaudete",
-    tijd: "[TIJD]",
+    tijd: "17.00u",
   },
   {
     datum: "2026-12-20",
     latijn: "Dominica IV Adventus",
     nederlands: "Vierde Zondag van de Advent",
-    tijd: "[TIJD]",
+    tijd: "17.00u",
   },
   {
     datum: "2026-12-24",
@@ -53,7 +53,7 @@ export type VasteTijd = { label: string; tijd: string; toelichting: string };
 export const vasteTijden: VasteTijd[] = [
   {
     label: "Zondag",
-    tijd: "[TIJD]",
+    tijd: "17.00u",
     toelichting: "[Gezongen Mis / Hoogmis]. Biechtgelegenheid vanaf [TIJD] vóór de Mis.",
   },
   {
