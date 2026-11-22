@@ -1,16 +1,39 @@
-## Hi there 👋
+# St Barbarakapel — Latijnse Mis Utrecht
 
-<!--
-**stbarbarakapel/stbarbarakapel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Website van de Latijnse Misgemeenschap in de St Barbarakapel, Prinsesselaan 4, Utrecht.
+Ontwerp: **Nocturne** (nachtfoto, Cinzel, goud).
 
-Here are some ideas to get you started:
+Zelfde opzet als `vanars-website`: TanStack Start + Vite + Tailwind v4, gebouwd met Bun en
+gedeployed op Vercel via de nitro `vercel`-preset (CI/CD op `main`).
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Ontwikkelen
+
+```bash
+bun install
+bun run dev      # http://localhost:3000 (of de poort die Vite toont)
+bun run build    # schrijft .vercel/output
+bun run lint
+```
+
+## Inhoud aanpassen
+
+Bijna alle tekst staat in `src/data/misrooster.ts`:
+
+- `komendeMissen` — de eerstvolgende Mis (vanaf vandaag) verschijnt automatisch in de balk onder de header
+- `vasteTijden`, `celebrant` — het misrooster
+- `route`, `adres`, `contact` — route- en contactgegevens
+
+Tekst tussen `[BLOKHAKEN]` moet nog ingevuld worden. Het domein staat in `src/lib/site.ts`.
+
+## Structuur
+
+```
+src/
+  routes/__root.tsx        HTML-shell, meta/OG-tags, fonts
+  routes/index.tsx         de one-pager
+  components/sections/     Hero, VolgendeMis, Misrooster, DeKapel, EersteBezoek, Route, Footer
+  components/ornament.tsx  kruis, scheidingslijn, koppen, knoppen
+  data/misrooster.ts       alle inhoud
+  styles.css               Nocturne-kleuren en -fonts (Tailwind theme)
+public/                    foto's, og-image, robots.txt
+```

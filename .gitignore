@@ -155,3 +155,30 @@ vite.config.ts.timestamp-*
 .nx/cache
 .nx/workspace-data
 .nx/migrate-runs
+
+# TanStack Start / Vercel
+.vercel/output
+.vercel
+.vinxi
+.tanstack/**
+dist-ssr
+*.local
+pnpm-debug.log*
+
+# Wrangler / Cloudflare
+.wrangler/
+.dev.vars
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Design reference export (not part of the site)
+*-html.zip
