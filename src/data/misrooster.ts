@@ -68,7 +68,7 @@ export const vasteTijden: VasteTijd[] = [
   },
 ];
 
-export const celebrant = "[PRIESTER / PRIESTERGEMEENSCHAP]";
+export const celebrant = "Latijnse Gemeenschap Sint Barbarakapel";
 
 export const adres = {
   naam: "St Barbarakapel",
@@ -77,14 +77,37 @@ export const adres = {
   kaartUrl: "https://www.google.com/maps/search/?api=1&query=Prinsesselaan+4+3583+GZ+Utrecht",
 };
 
-export const route = [
+export type RouteItem = {
+  titel: string;
+  tekst: string;
+  link?: { href: string; label: string };
+};
+
+export const route: RouteItem[] = [
+  {
+    titel: "Auto",
+    tekst: "De kapel is goed bereikbaar via de A28, A27 en A12.",
+  },
+  {
+    titel: "Parkeren",
+    tekst: "Parkeren kan bij de Parkeerplaats Begraafplaats St Barbara.",
+    link: {
+      href: "https://maps.app.goo.gl/73mKB2qEdjRdGAhF8",
+      label: "Bekijk op de kaart →",
+    },
+  },
+  {
+    titel: "Openbaar vervoer",
+    tekst: "Vanaf Utrecht Centraal rijden meerdere bussen naar bushalte Utrecht Oorsprongpark.",
+  },
   {
     titel: "Te voet",
     tekst: "Volg vanaf de ingang van de begraafplaats de bomenlaan; de kapel ligt aan het einde.",
   },
-  { titel: "Openbaar vervoer", tekst: "[Bushalte en lijn]" },
-  { titel: "Parkeren", tekst: "[Parkeermogelijkheden]" },
-  { titel: "Toegankelijkheid", tekst: "[Rolstoeltoegang, drempels]" },
+  {
+    titel: "Toegankelijkheid",
+    tekst: "De kapel is toegankelijk met een rolstoel.",
+  },
 ];
 
 export const contact = {

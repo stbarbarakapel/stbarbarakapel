@@ -52,9 +52,9 @@ export function SectionHeading({
   intro?: string;
 }) {
   return (
-    <div className="mb-16 flex flex-col items-center gap-[14px] text-center">
+    <div className="mb-10 flex md:mb-16 flex-col items-center gap-[14px] text-center">
       <Eyebrow>{eyebrow}</Eyebrow>
-      <h2 className="m-0 font-display text-[clamp(32px,4vw,52px)] font-medium tracking-[0.08em] text-bone">
+      <h2 className="m-0 font-display text-[clamp(28px,4vw,52px)] font-medium tracking-[0.08em] text-bone">
         {title}
       </h2>
       {intro && <p className="m-0 max-w-[620px] italic text-text-3">{intro}</p>}

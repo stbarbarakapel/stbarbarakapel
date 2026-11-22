@@ -21,13 +21,13 @@ const PUNTEN = [
 
 export function EersteBezoek() {
   return (
-    <section id="eerste-bezoek" className="mx-auto max-w-[1200px] px-6 py-[140px]">
+    <section id="eerste-bezoek" className="mx-auto max-w-[1200px] px-5 py-16 md:px-6 md:py-[140px]">
       <SectionHeading
         eyebrow="III · Eerste bezoek"
         title="Wees welkom"
         intro="Nieuw in de oude ritus? Niemand verwacht dat u alles al kent."
       />
-      <div className="grid gap-14 [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]">
+      <div className="grid gap-10 md:gap-14 [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]">
         {PUNTEN.map((p) => (
           <div key={p.nr} className="flex flex-col gap-3 text-center">
             <p className="m-0 font-display text-[32px] text-gold">{p.nr}</p>
