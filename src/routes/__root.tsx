@@ -26,11 +26,11 @@ function Centered({ children }: { children: ReactNode }) {
 function NotFoundComponent() {
   return (
     <Centered>
-      <p className="m-0 font-display text-[13px] tracking-[0.26em] text-gold">404</p>
-      <h1 className="m-0 font-display text-4xl font-normal tracking-[0.08em] text-bone">
+      <p className="m-0 font-display text-[13px] font-semibold tracking-[0.26em] text-gold">404</p>
+      <h1 className="m-0 font-display text-4xl font-medium tracking-[0.08em] text-bone">
         Pagina niet gevonden
       </h1>
-      <a href="/" className="font-display text-[13px] tracking-[0.18em]">
+      <a href="/" className="font-display text-[13px] font-semibold tracking-[0.18em]">
         ← NAAR DE STARTPAGINA
       </a>
     </Centered>
@@ -42,7 +42,7 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
   const router = useRouter();
   return (
     <Centered>
-      <h1 className="m-0 font-display text-3xl font-normal tracking-[0.08em] text-bone">
+      <h1 className="m-0 font-display text-3xl font-medium tracking-[0.08em] text-bone">
         Er ging iets mis
       </h1>
       <button
@@ -50,7 +50,7 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
           router.invalidate();
           reset();
         }}
-        className="min-h-12 cursor-pointer border border-gold bg-transparent px-7 font-display text-[13px] tracking-[0.18em] text-bone"
+        className="min-h-12 cursor-pointer border border-gold bg-transparent px-7 font-display text-[13px] font-semibold tracking-[0.18em] text-bone"
       >
         OPNIEUW PROBEREN
       </button>
@@ -83,7 +83,7 @@ export const Route = createRootRoute({
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap",
       },
       { rel: "preload", as: "image", href: "/kapel-nacht.jpg" },
     ],

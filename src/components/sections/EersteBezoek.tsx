@@ -31,7 +31,7 @@ export function EersteBezoek() {
         {PUNTEN.map((p) => (
           <div key={p.nr} className="flex flex-col gap-3 text-center">
             <p className="m-0 font-display text-[32px] text-gold">{p.nr}</p>
-            <h3 className="m-0 font-display text-[20px] font-medium uppercase tracking-[0.12em] text-bone">
+            <h3 className="m-0 font-display text-[20px] font-semibold uppercase tracking-[0.12em] text-bone">
               {p.titel}
             </h3>
             <p className="m-0 text-text-3">{p.tekst}</p>

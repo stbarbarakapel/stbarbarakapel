@@ -11,7 +11,7 @@ export function Misrooster() {
             key={t.label}
             className="flex flex-col gap-3 border border-gold/30 bg-ink-2 px-9 py-10"
           >
-            <p className="m-0 font-display text-[13px] uppercase tracking-[0.2em] text-gold">
+            <p className="m-0 font-display text-[13px] font-semibold uppercase tracking-[0.2em] text-gold">
               {t.label}
             </p>
             <p className="m-0 font-display text-[40px] leading-tight text-bone">{t.tijd}</p>

@@ -16,7 +16,7 @@ export function DeKapel() {
         </div>
         <div className="flex flex-[1_1_420px] flex-col gap-5">
           <Eyebrow>II · De kapel</Eyebrow>
-          <h2 className="m-0 font-display text-[clamp(30px,3.6vw,48px)] font-normal leading-[1.2] tracking-[0.06em] text-bone">
+          <h2 className="m-0 font-display text-[clamp(30px,3.6vw,48px)] font-medium leading-[1.2] tracking-[0.06em] text-bone">
             Tussen de oude graven, onder de lindes
           </h2>
           <p className="m-0 text-text-2">

@@ -33,7 +33,7 @@ export function Eyebrow({ children, className }: { children: ReactNode; classNam
   return (
     <p
       className={cn(
-        "m-0 font-display text-[13px] uppercase tracking-[0.26em] text-gold",
+        "m-0 font-display text-[13px] font-semibold uppercase tracking-[0.26em] text-gold",
         className,
       )}
     >
@@ -54,7 +54,7 @@ export function SectionHeading({
   return (
     <div className="mb-16 flex flex-col items-center gap-[14px] text-center">
       <Eyebrow>{eyebrow}</Eyebrow>
-      <h2 className="m-0 font-display text-[clamp(32px,4vw,52px)] font-normal tracking-[0.08em] text-bone">
+      <h2 className="m-0 font-display text-[clamp(32px,4vw,52px)] font-medium tracking-[0.08em] text-bone">
         {title}
       </h2>
       {intro && <p className="m-0 max-w-[620px] italic text-text-3">{intro}</p>}
@@ -75,7 +75,7 @@ export function OutlineButton({
     <a
       href={href}
       className={cn(
-        "inline-flex min-h-12 items-center border border-gold px-7 font-display text-[13px] uppercase tracking-[0.18em]",
+        "inline-flex min-h-12 items-center border border-gold px-7 font-display text-[13px] font-semibold uppercase tracking-[0.18em]",
         className,
       )}
     >

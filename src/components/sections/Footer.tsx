@@ -12,7 +12,7 @@ export function Footer() {
       <p className="m-0 text-[18px] text-muted">
         Ik zal opgaan naar het altaar van God. — Psalm 42
       </p>
-      <div className="mt-8 flex flex-wrap justify-center gap-x-10 gap-y-3 font-display text-[13px] tracking-[0.16em]">
+      <div className="mt-8 flex flex-wrap justify-center gap-x-10 gap-y-3 font-display text-[13px] font-semibold tracking-[0.16em]">
         <a href={`mailto:${contact.email}`} className="py-3">
           {contact.email}
         </a>
