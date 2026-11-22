@@ -66,14 +66,18 @@ export function OutlineButton({
   href,
   children,
   className,
+  external = false,
 }: {
   href: string;
   children: ReactNode;
   className?: string;
+  /** Open in een nieuw tabblad (voor links naar andere sites) */
+  external?: boolean;
 }) {
   return (
     <a
       href={href}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={cn(
         "inline-flex min-h-12 items-center border border-gold px-7 font-display text-[13px] font-semibold uppercase tracking-[0.18em]",
         className,

@@ -15,7 +15,7 @@ export function Route() {
             <br />
             {adres.postcodePlaats}
           </address>
-          <OutlineButton href={adres.kaartUrl} className="self-start px-6">
+          <OutlineButton href={adres.kaartUrl} external className="self-start px-6">
             Open in kaart →
           </OutlineButton>
         </div>

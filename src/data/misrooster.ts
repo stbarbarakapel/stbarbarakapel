@@ -74,7 +74,7 @@ export const adres = {
   naam: "St Barbarakapel",
   straat: "Prinsesselaan 4",
   postcodePlaats: "3583 GZ Utrecht",
-  kaartUrl: "https://www.google.com/maps/search/?api=1&query=Prinsesselaan+4+3583+GZ+Utrecht",
+  kaartUrl: "https://maps.app.goo.gl/ZJQtcMN4BwiWHQfu7",
 };
 
 export type RouteItem = {
